@@ -1,0 +1,11 @@
+Graph Icon
+    -url
+    https://pixabay.com/vectors/data-graph-math-mathematics-maths-1293312/
+
+Arrow Icon
+    -url
+    https://pixabay.com/vectors/arrow-left-point-pointer-sharp-40169/
+
+Stop Icon
+    -url
+    https://pixabay.com/vectors/stop-icon-player-button-outline-2935470/

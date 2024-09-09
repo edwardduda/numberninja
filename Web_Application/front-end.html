@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Chat Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.1/math.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js"></script>
+</head>
+<body> 
+    <div class="chat-container">
+        <div id="chat-window" class="chat-window"></div>
+        <div class="chat-input-container">
+            <textarea id="chat-input" placeholder="Let's embark..."></textarea>
+            <!-- SVG buttons with individual classes -->
+            <button id="graph-button" class="svg-button graph-button">
+                <img src="imgs/graph_icon.svg" alt="Graph" class="graph-svg">
+            </button>
+            <button id="send-button" class="svg-button send-button">
+                <img src="imgs/arrow-40169.svg" alt="Send" class="send-svg">
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

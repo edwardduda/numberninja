@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(155deg, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 85%;
+    height: 85vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px rgba(13, 13, 13, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    box-shadow: 0px 0px 0px rgba(0, 55, 64, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    padding: 1px 10px;  /* Adjust as needed */
+    border-radius: 12px;
+    align-items: flex-start;  /* Aligns text to the top vertically */
+    animation: fadeInUp 0.4s ease;
+    line-height: normal;
+    word-wrap: break-word;
+    max-width: 70%;
+    white-space: pre-wrap;
+    margin-bottom: 16px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-message.user {
+    align-self: flex-start;
+    background: linear-gradient(180deg, #00bfff, #08c2d3);
+    color: #333;
+    box-shadow: 2px 1px 2px rgba(0,0,0,0.2);
+}
+
+.chat-message.bot {
+    align-self: flex-end;
+    color: #333;
+    background-color: #f1f1f1;
+    box-shadow: -2px 1px 2px rgba(0,0,0,0.2);
+}
+
+.chat-input-container {
+    display: flex;
+    align-items: center;  /* Aligns input and buttons vertically */
+    padding: 10px;
+    background-color: #f9f9f9;  /* Optional: background for the input area */
+    border-top: 1px solid #ddd;  /* Optional: border for separation */
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    resize: none;  /* Disable manual resizing */
+    overflow: hidden;  /* Hide overflow for smooth resizing */
+    min-height: 40px;  /* Adjust as needed */
+    max-height: 100px;  /* Set a maximum height */
+    box-sizing: border-box;
+    margin-right: 10px;  /* Add some space between the input and buttons */
+    transition: height 0.4s ease;
+}
+
+/* Updated styles for SVG buttons */
+.svg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #faf9f9;
+    padding: 0;  /* Remove padding for better alignment */
+    margin-left: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+    width: 42px;  /* Set a fixed width */
+    height: 42px; /* Set a fixed height */
+}
+
+.svg-button img {
+    display: block;
+    width: 65%;  /* Adjust the width to fit nicely within the button */
+    height: 65%; /* Adjust the height to fit nicely within the button */
+}
+
+.graph-button {
+    background-color: #d7ffe1;
+}
+
+.graph-button:hover {
+    background-color: #72ff95;
+}
+
+.send-button {
+    background-color: #dafbfe;
+    transition: background-color 0.4s ease;
+}
+
+.send-button:hover {
+    background-color: #45d0ff;
+}
+
+.send-svg {
+    transform: rotate(90deg); /* Optional: Rotate the send icon */
+}
+
+.graph-container {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    background-color: #fff; /* Set the background color to white */
+    border-radius: 10px; /* Optional: Add border radius to match chat bubbles */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+}
+
+.chat-message.graph {
+    background-color: transparent; /* Make sure the graph chat message has a transparent background */
+    padding: 0; /* Remove padding for a cleaner look */
+    margin-bottom: 16px; /* Adjust margin as needed */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chat-message.user.graph {
+    justify-content: flex-start;
+}
+
+.chat-message.bot.graph {
+    justify-content: flex-end;
+}
