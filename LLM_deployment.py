@@ -261,7 +261,7 @@ class EmbeddingVectorDatabase:
                         "content": input_prompt,
                     }
                 ],
-                model="llama3-70b-8192",
+                model="llama3.1-70b-versatile",
             )
             response = chat_completion.choices[0].message.content + " "
             self.insert_query(self.llm_id, response)
