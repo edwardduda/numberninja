@@ -7,10 +7,9 @@
 4. [Heirarchical Navigable Small World](#heirarchical-navigable-small-world)
 5. [Installation and Setup](#installation-and-setup)
 6. [Usage & Approach](#usage-and-approach)
-7. [Results](#results)
-8. [Conclusion](#conclusion)
-9. [Contributing](#contributing)
-10. [References](#references)
+7. [Future Implementations](#future-implementations)
+8. [Conclusion](#Conclusion)
+9. [References and Acknowledgements](#references_and_acknowledgements)
 
 ## Problem
 
@@ -62,8 +61,6 @@ A JavaScript application is used to communicate with the APIs via Python and myS
         # Include the user's input and format the prompt properly
         prompt = f"{response_params}\n\nContext: {context}\n\nUser Input: {user_input}\n\nResponse:"
         return prompt
-
-## Results
 
 ## Future Implementations
 Things like remember the name, age, current courses, and grade_lvl could be officially recorded and stored properly in a secure database. This wasn't implemented in this case because of the outside of the scope of the project. The front-end of the application would be reworked by someone with more experience creating a professional-looking UI and debugging the javascript. Full disclosure, ChatGPT and Clause 3.5 Sonnet were used to generate the javascript code. A front-end developer would be a better choice to improve functionality and security.
